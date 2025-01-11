@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background: #2c442f;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        .frame {
+            width: 60%; /* 修改为可适应屏幕宽度 */
+            height: 1000px;
+            position: relative;
+            padding: 20px;
+        }
+        .title {
+            color: antiquewhite;
+            font-size: 32px;
+            font-family: Itim;
+            margin: 20px 0;
+        }
+        .subtitle {
+            color: black;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .label {
+            color: black;
+            font-size: 24px;
+            font-family: Inter;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%; /* 使输入框全宽 */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 100px;
+        }
+        .send-button {
+            width: 100%;
+            height: 57px;
+            background: #3F3B3B;
+            color: white;
+            font-size: 24px;
+            font-family: Inter;
+            font-weight: 700;
+            text-transform: capitalize;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .send-button:hover {
+            background: #505050;
+        }
+        .image-container {
+            width: 40%; /* 右侧图片区域 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .contact-image {
+            max-width: 200%;
+            height:700px ; /* 自适应高度 */
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="frame">
+	 <a href="主页.html" style="text-decoration: none;">
+        <div class="title">PITCHFORK&nbsp;</div>
+		 <a/>
+        <div class="subtitle">Feel free to contact us at anytime, we will get back as soon as possible.</div>
+
+        <div class="label name-label">Name</div>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <div class="label email-label">Email</div>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <div class="label message-label">Message</div>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+
+        <button class="send-button" onclick="submitForm()">Send</button>
+    </div>
+    <span class="image-container"><img src="IMG_0998 2.jpg" alt="Contact Us Image" class="contact-image"></span>
+    <div class="image-container"><!-- 替换为您的图片URL -->
+    </div>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            if (name && email && message) {
+                alert("感谢您的留言，我们会尽快与您联系。");
+                // 在这里可以添加代码来处理实际的表单提交
+            } else {
+                alert("请确保所有字段都已填写。");
+            }
+        }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+
+</html>
+</body>
+</html>
+<body>
+</body>
+</html>
